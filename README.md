@@ -42,3 +42,91 @@ It enables users to visualize datasets, monitor insights, and manage analytics v
 
 ## 📦 Project Structure
 
+Data-Virtualization-Dashboard/
+│
+├── client/ # React Frontend
+│ ├── src/
+│ │ ├── components/
+│ │ ├── pages/
+│ │ ├── services/
+│ │ └── App.js
+│ ├── package.json
+│
+├── server/ # Node.js + Express Backend
+│ ├── routes/
+│ ├── models/
+│ ├── controllers/
+│ ├── server.js
+│ └── package.json
+│
+└── README.md
+
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/SuryaKumarV20/Data-Virtualization-Dashboard.git
+cd Data-Virtualization-Dashboard
+
+2️⃣ Install dependencies for both frontend & backend
+cd client
+npm install
+
+cd ../server
+npm install
+
+3️⃣ Configure your .env file
+MONGO_URI = your_mongodb_connection_string
+PORT = 5000
+JWT_SECRET = your_secret_key
+
+4️⃣ Run both servers
+
+In two separate VS Code terminals:
+
+# Terminal 1 (Backend)
+cd server
+npm start
+
+# Terminal 2 (Frontend)
+cd client
+npm start
+
+
+App runs on 👉 http://localhost:3000
+
+📊 Dashboard Preview
+<p align="center"> <img src="https://user-images.githubusercontent.com/74038190/238356525-e7e6f83c-6d93-4e0c-a441-77c67e9ff45f.gif" width="800"/> </p>
+🧩 API Endpoints
+Method	Endpoint	Description
+GET	/api/data	Fetch all datasets
+POST	/api/data	Upload new data
+PUT	/api/data/:id	Update dataset
+DELETE	/api/data/:id	Delete dataset
+🧠 Future Enhancements
+
+🌐 Add support for multi-source data connectors (CSV, Excel, APIs)
+
+⚙️ Implement role-based access control
+
+📈 Integrate AI-based data summarization
+
+☁️ Deploy with CI/CD pipelines
+
+🧑‍💻 Author
+
+Surya Kumar V
+📧 suryakumarv20@gmail.com
+
+🔗 LinkedIn
+
+🐙 GitHub
+
+💖 Support
+
+If you found this project useful, consider giving it a ⭐ on GitHub and sharing it with others!
+
+<p align="center"> <img src="https://user-images.githubusercontent.com/74038190/213910845-af37a709-8995-40d6-9c59-18d9a8e7a6aa.gif" width="400"/> </p> ```
